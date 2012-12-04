@@ -39,3 +39,5 @@ gem 'jquery-rails'
 gem "mongoid", ">= 3.0.11"
 gem "bootstrap-sass", ">= 2.1.1.0"
 gem "simple_form", ">= 2.0.4"
+gem "quiet_assets", ">= 1.0.1", :group => :development
+gem "hub", ">= 1.10.2", :require => nil, :group => [:development]
