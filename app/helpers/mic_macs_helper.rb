@@ -1,0 +1,2 @@
+module MicMacsHelper
+end

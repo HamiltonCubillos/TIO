@@ -1,0 +1,23 @@
+<h1>Listing mic_macs</h1>
+
+<table>
+  <tr>
+    <th>Numvariables</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @mic_macs.each do |mic_mac| %>
+  <tr>
+    <td><%= mic_mac.numvariables %></td>
+    <td><%= link_to 'Show', mic_mac %></td>
+    <td><%= link_to 'Edit', edit_mic_mac_path(mic_mac) %></td>
+    <td><%= link_to 'Destroy', mic_mac, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Mic mac', new_mic_mac_path %>
