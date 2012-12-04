@@ -35,3 +35,7 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem "mongoid", ">= 3.0.11"
+gem "bootstrap-sass", ">= 2.1.1.0"
+gem "simple_form", ">= 2.0.4"
