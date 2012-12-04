@@ -2,7 +2,7 @@ class MicMacsController < ApplicationController
   # GET /mic_macs
   # GET /mic_macs.json
   def index
-    @mic_macs = MicMac.all
+    @mic_macs = :MicMac.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,7 +13,7 @@ class MicMacsController < ApplicationController
   # GET /mic_macs/1
   # GET /mic_macs/1.json
   def show
-    @mic_mac = MicMac.find(params[:id])
+    @mic_mac = :MicMac.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -24,7 +24,7 @@ class MicMacsController < ApplicationController
   # GET /mic_macs/new
   # GET /mic_macs/new.json
   def new
-    @mic_mac = MicMac.new
+    @mic_mac = :MicMac.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -34,13 +34,13 @@ class MicMacsController < ApplicationController
 
   # GET /mic_macs/1/edit
   def edit
-    @mic_mac = MicMac.find(params[:id])
+    @mic_mac = :MicMac.find(params[:id])
   end
 
   # POST /mic_macs
   # POST /mic_macs.json
   def create
-    @mic_mac = MicMac.new(params[:mic_mac])
+    @mic_mac = :MicMac.new(params[:mic_mac])
 
     respond_to do |format|
       if @mic_mac.save
@@ -56,7 +56,7 @@ class MicMacsController < ApplicationController
   # PUT /mic_macs/1
   # PUT /mic_macs/1.json
   def update
-    @mic_mac = MicMac.find(params[:id])
+    @mic_mac = :MicMac.find(params[:id])
 
     respond_to do |format|
       if @mic_mac.update_attributes(params[:mic_mac])
@@ -72,7 +72,7 @@ class MicMacsController < ApplicationController
   # DELETE /mic_macs/1
   # DELETE /mic_macs/1.json
   def destroy
-    @mic_mac = MicMac.find(params[:id])
+    @mic_mac = :MicMac.find(params[:id])
     @mic_mac.destroy
 
     respond_to do |format|
