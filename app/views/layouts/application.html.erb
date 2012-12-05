@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Tio" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Tio" %>">
+    <title><%= content_for?(:title) ? yield(:title) : "Prospectiva: Mic Mac" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Prospectiva" %>">
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
@@ -11,6 +11,9 @@
   </head>
   <body class="<%= controller_name %> <%= action_name %>">
     <header class="navbar navbar-fixed-top">
+      <div class="container">
+	<%= render 'layouts/header' %>
+      </div> 
       <nav class="navbar-inner">
         <div class="container">
           <%= render 'layouts/navigation' %>
@@ -27,7 +30,7 @@
             </div>
           </div>
           <footer>
-            <div class="foot">
+            <div class="field">
                <%= render 'layouts/foot' %>  
              </div>
           </footer>

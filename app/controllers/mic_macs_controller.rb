@@ -1,6 +1,7 @@
 class MicMacsController < ApplicationController
   # GET /mic_macs
   # GET /mic_macs.json
+  attr_accesible :numvariable
   def index
     @mic_macs = :MicMac.all
 

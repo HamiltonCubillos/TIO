@@ -13,13 +13,22 @@
 */
 
 .content {
-  background-color: #eee;
+  background:url('/images/bg.jpg') top center;
   padding: 20px;
-  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+  margin-top: 100px; /* negative indent the amount of the padding to maintain the grid system */
+  width: 1024px;
   -webkit-border-radius: 0 0 6px 6px;
   -moz-border-radius: 0 0 6px 6px;
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 15px 15px;
   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
   box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+#header{
+  height:115px;
+  width:1024px;
+  background: #000 url('logo.jpg') top center no-repeat;
+}
+#footer{
+  background-color: #0AC;
 }
